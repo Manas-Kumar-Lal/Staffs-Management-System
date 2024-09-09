@@ -1,0 +1,42 @@
+/* For WebKit browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the vertical scrollbar */
+    height: 10px;
+    /* Height of the horizontal scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Background of the scrollbar track */
+    border-radius: 10px;
+    /* Rounded corners for the track */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: lightseagreen;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+    border: 2px solid #f1f1f1;
+    /* Adds a border around the thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color when hovering over the thumb */
+}
+
+/* Scrollbar corner when both horizontal and vertical scrollbars are visible */
+*:-webkit-scrollbar-corner {
+    background: #f1f1f1;
+    /* Background color of the scrollbar corner */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    /* Sets the width of the scrollbar */
+    scrollbar-color: lightseagreen #f1f1f1;
+    /* thumb color and track color */
+}

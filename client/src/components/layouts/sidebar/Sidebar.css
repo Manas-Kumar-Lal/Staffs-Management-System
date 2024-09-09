@@ -1,0 +1,16 @@
+/* For Chrome, Safari, and other WebKit browsers */
+.Sidebar::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.Sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.739),rgba(0, 140, 234, 0.523));
+}
+
+.Sidebar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.835), rgba(0, 140, 234, 0.523));
+}
+.Sidebar::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(to right, rgb(255, 255, 255),rgba(0, 140, 234, 0.523));
+}

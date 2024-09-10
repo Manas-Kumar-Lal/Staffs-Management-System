@@ -18,7 +18,7 @@ export const adminSidebarJSON = [
             },
             {
                 name: "Admission Requests",
-                route: "",
+                route: "admission-management/admission-requests",
             },
             {
                 name: "Admission Inquiries",
@@ -26,7 +26,7 @@ export const adminSidebarJSON = [
                 subLinks: [
                     {
                         name: "Manage Inquires",
-                        route: "",
+                        route: "admission-management/manage-inquiries",
                     },
                     {
                         name: "Send SMS To Inquiries",

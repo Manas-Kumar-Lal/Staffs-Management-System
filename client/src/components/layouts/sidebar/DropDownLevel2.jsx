@@ -1,7 +1,10 @@
 import React from 'react'
 import { GoDot } from "react-icons/go";
+import { useNavigate } from 'react-router-dom';
 
 const DropDownLevel2 = ({ dropDownIndex, index, items }) => {
+
+    const navigate = useNavigate();
 
     return (
         <>
@@ -11,7 +14,7 @@ const DropDownLevel2 = ({ dropDownIndex, index, items }) => {
                     }`}>
                     {items?.map((item, index) => {
                         return (
-                            <div key={index} className="cursor-pointer">
+                            <div onClick={() => { item?.route && navigate(item?.route) }} key={index} className="cursor-pointer">
                                 <div
                                     className="text-sm cursor-pointer flex justify-between items-center gap-5 pl-12 py-2 hover:bg-gray-300/30"
                                 >

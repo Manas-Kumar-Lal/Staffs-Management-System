@@ -11,7 +11,7 @@ export const TeacherSidebarJSON = [
     },
     {
         name: "Manage Attendence",
-        route: "",
+        route: "/teacher/studentattendence",
         icons:''
     },
     {

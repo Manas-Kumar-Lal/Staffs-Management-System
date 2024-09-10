@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ViewAttendence from './viewAttendence/ViewAttendence';
 import TakeAttendence from './takeAttendence/TakeAttendence';
 
-const StudentAttendance = () => {
+const ManageAttendance = () => {
   const [activeView, setActiveView] = useState('view');
 
   return (
@@ -33,7 +33,7 @@ const StudentAttendance = () => {
               <ViewAttendence />
             </div>
           )}
-          
+
           {activeView === 'take' && (
             <div className="bg-white shadow-lg rounded-lg p-6 transition-all duration-300 ease-in-out transform">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Take Attendance</h2>
@@ -46,4 +46,4 @@ const StudentAttendance = () => {
   );
 }
 
-export default StudentAttendance;
+export default ManageAttendance;

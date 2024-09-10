@@ -6,12 +6,12 @@ export const TeacherSidebarJSON = [
     },
     {
         name: "Student List",
-        route: "/teacher/studentlist",
+        route: "/teacher/student-list",
         icons:''
     },
     {
-        name: "Manage Attendence",
-        route: "/teacher/studentattendence",
+        name: "Manage Attendance",
+        route: "/teacher/student-attendence",
         icons:''
     },
     {

@@ -29,11 +29,11 @@ const StudentDetails = () => {
   ];
 
   return (
-    <div className="mt-5">
+    <div>
       <h1 className="text-2xl font-bold mb-5">List of Students</h1>
 
-      <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-300">
+      <div className="overflow-x-auto" style={{boxShadow:'0 0 15px rgba(0,0,0,.1)'}}>
+        <table className="min-w-full bg-white">
           <thead>
             <tr>
               <th className="py-2 px-4 border-b">

@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import { RiMenu3Fill } from "react-icons/ri";
 import TeacherDashboard from './pages/teacherDashboard/TeacherDashboard';
 import StudentList from './pages/studentList/StudentList';
-import StudentAttendence from './pages/studentAttendence/StudentAttendence';
+import ManageAttendance from './pages/manageAttendance/ManageAttendance';
 
 const Teacher = () => {
     const [sideBarToggle, setSideBarToggle] = useState(false);
@@ -29,8 +29,8 @@ const Teacher = () => {
             <div className="flex-1 overflow-y-auto p-4">
                 <Routes>
                     <Route path="/dashboard" element={<TeacherDashboard />} />
-                    <Route path="/studentlist" element={<StudentList />} />
-                    <Route path="/studentattendence" element={<StudentAttendence />} />
+                    <Route path="/student-list" element={<StudentList />} />
+                    <Route path="/student-attendence" element={<ManageAttendance />} />
                 </Routes>
             </div>
         </div>

@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import SearchByClass from './components/SearchByClass';
 import SearchByKeyword from './components/SearchByKeyword';
 import StudentDetails from './components/StudentDeails';
+import PrimaryButton from '../../../../components/utilities/buttons/primaryButton/PrimaryButton'
 
 const StudentList = () => {
   const [selectedOption, setSelectedOption] = useState('keyword');
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
-      <h1 className="py-4 w-full bg-indigo-600 text-center text-2xl sm:text-3xl font-bold text-white rounded-md shadow-md">
+    <div>
+      <h1 className="py-4 w-full bg-[lightseagreen] text-center text-2xl sm:text-3xl font-bold text-white rounded-md shadow-md">
         Students
       </h1>
 
-      <div className="mt-8 bg-white p-6 sm:p-8 rounded-md shadow-lg">
+      <div className="mt-8 bg-white p-6 sm:p-8 rounded-md" style={{boxShadow:'0 0 15px rgba(0,0,0,.1)'}}>
         <label className="block text-lg font-semibold text-gray-700 mb-4">
           Search Students
         </label>
@@ -48,9 +49,9 @@ const StudentList = () => {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <button className="px-6 py-2 bg-indigo-600 text-white text-base sm:text-lg font-semibold rounded-md shadow-md hover:bg-indigo-700">
+          <PrimaryButton className={'max-w-fit'}>
             Get Students
-          </button>
+          </PrimaryButton>
         </div>
       </div>
 

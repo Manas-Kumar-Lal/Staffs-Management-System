@@ -7,13 +7,13 @@ import SecondaryButton from "../../../../../components/utilities/buttons/seconda
 
 const AdmissionRequests = () => {
     return (
-        <div>
+        <div style={{boxShadow:'0 0 10px rgba(0,0,0,.2)'}}>
             {/* Header */}
             <div className="bg-[lightseagreen] text-white p-4 rounded-t-md">
                 <h2 className="text-lg font-bold">Print Admission Forms</h2>
             </div>
 
-            <div className="my-3 flex items-end justify-between gap-[1rem] max-[1300px]:flex-col">
+            <div className="p-3 flex items-end justify-between gap-[1rem] max-[1300px]:flex-col max-[1300px]:items-start">
 
                 <div className="w-full flex items-end justify-between gap-[1rem] max-[500px]:flex-col">
                     {/* Campus Select with Icon */}
@@ -59,7 +59,7 @@ const AdmissionRequests = () => {
                     </div>
                 </div>
 
-                <SecondaryButton Icon={<IoSearch />} className={'bg-[#72C971] h-[3rem]'} iconBG="bg-[#0A8D3F]">
+                <SecondaryButton Icon={<IoSearch />} className={'bg-[#72C971] h-[3rem] max-w-[10rem]'} iconBG="bg-[#0A8D3F]">
                     Filter Data
                 </SecondaryButton>
             </div>

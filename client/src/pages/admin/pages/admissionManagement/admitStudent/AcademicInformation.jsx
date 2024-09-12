@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaUserGraduate, FaGenderless } from 'react-icons/fa';
 import { FiCalendar } from 'react-icons/fi';
-import INPUT from '../components/input/INPUT';
-import SELECT from '../components/select/SELECT';
+import INPUT from '../../../components/form/input/INPUT';
+import SELECT from '../../../components/form/select/SELECT';
 
-const Form4 = () => {
+const AcademicInformation = () => {
     return (
         <div className="w-full h-fit bg-white rounded-lg overflow-hidden" style={{ boxShadow: '0 0 15px rgba(0,0,0,.1)' }}>
 
@@ -78,4 +78,4 @@ const Form4 = () => {
     );
 };
 
-export default Form4;
+export default AcademicInformation;

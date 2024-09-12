@@ -10,8 +10,8 @@ const SELECT = ({ Icon = <FaGenderless />, label = "Label", options = [], ...pro
     };
 
     return (
-        <div className='w-full flex flex-col gap-1'>
-            <label className="block text-sm font-medium text-gray-700" htmlFor={props?.id}>
+        <div className='w-full flex flex-col gap-1 cursor-pointer'>
+            <label className="block text-sm font-medium text-gray-500" htmlFor={props?.id}>
                 {label}
             </label>
             <div className="h-[3rem] relative flex items-center border border-gray-300 rounded-md shadow-sm focus-within:ring-2 focus-within:ring-blue-500">
@@ -22,7 +22,7 @@ const SELECT = ({ Icon = <FaGenderless />, label = "Label", options = [], ...pro
 
                 {/* Custom Select */}
                 <select
-                    className="flex-1 border-none focus:outline-none rounded-r-md appearance-none pr-8 px-3"
+                    className="w-full flex-1 h-full cursor-pointer border-none focus:outline-none rounded-r-md appearance-none pr-8 px-3"
                     value={selectedOption}
                     onChange={handleChange}
                     {...props}

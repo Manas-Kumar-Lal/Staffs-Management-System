@@ -1,9 +1,9 @@
 import React from 'react'
-import Form1 from './Form1'
-import Form2 from './Form2'
-import Form3 from './Form3'
-import Form4 from './Form4'
-import SELECT from '../components/select/SELECT'
+import StudentInformation from './StudentInformation'
+import ParentInformation from './ParentInformation'
+import OtherInformation from './OtherInformation'
+import AcademicInformation from './AcademicInformation'
+import SELECT from '../../../components/form/select/SELECT'
 import { FaGenderless } from 'react-icons/fa';
 import PrimaryButton from '../../../../../components/utilities/buttons/primaryButton/PrimaryButton'
 import { ImUserPlus } from "react-icons/im";
@@ -12,14 +12,14 @@ const AdmitStudent = () => {
     return (
         <div>
 
-            <form className='flex gap-[1rem] max-[1000px]:flex-col'>
+            <form className='flex gap-[1rem] max-[1200px]:flex-col'>
                 <div className="w-full flex flex-col gap-[1rem]">
-                    <Form1 />
-                    <Form3 />
+                    <StudentInformation />
+                    <ParentInformation />
                 </div>
                 <div className="w-full flex flex-col gap-[1rem]">
-                    <Form2 />
-                    <Form4 />
+                    <AcademicInformation />
+                    <OtherInformation />
                 </div>
             </form>
 

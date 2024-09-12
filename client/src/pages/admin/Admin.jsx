@@ -5,6 +5,7 @@ import AdminDashboard from './pages/adminDashboard/AdminDashboard';
 import { Route, Routes } from 'react-router-dom';
 import { RiMenu3Fill } from "react-icons/ri";
 import AdmissionManagement from './pages/admissionManagement/AdmissionManagement';
+import StudentManagement from './pages/studentManagement/StudentManagement';
 
 const Admin = () => {
 
@@ -31,6 +32,7 @@ const Admin = () => {
                     <Route path="/dashboard" element={<AdminDashboard />} />
                     <Route path="/dashboard" element={<AdminDashboard />} />
                     <Route path="/admission-management/*" element={<AdmissionManagement />} />
+                    <Route path="/student-management/*" element={<StudentManagement />} />
                 </Routes>
             </div>
         </div>

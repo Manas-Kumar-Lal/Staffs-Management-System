@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaUserGraduate, FaGenderless } from 'react-icons/fa';
-import INPUT from '../components/input/INPUT';
-import SELECT from '../components/select/SELECT';
+import INPUT from '../../../components/form/input/INPUT';
+import SELECT from '../../../components/form/select/SELECT';
 
-const Form3 = () => {
+const OtherInformation = () => {
     return (
         <div className="w-full h-fit bg-white rounded-lg overflow-hidden" style={{ boxShadow: '0 0 15px rgba(0,0,0,.1)' }}>
 
@@ -76,4 +76,4 @@ const Form3 = () => {
     );
 };
 
-export default Form3;
+export default OtherInformation;

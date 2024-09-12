@@ -1,7 +1,7 @@
 // src/AdmissionRequests.js
 import React from "react";
 import TopBar from "./TopBar";
-import ActionButton from "./ActionButton";
+import SecondaryButton from '../../../../../../components/utilities/buttons/secondaryButton/SecondaryButton'
 
 const ManageInquiries = () => {
     return (
@@ -47,19 +47,19 @@ const ManageInquiries = () => {
                                 <td className="border border-gray-200 p-2 align-top text-center">alpha alpha 205 gali nathnagar</td>
                                 <td className="border border-gray-200 p-2 align-top text-center">01-01-9239 07:23:23</td>
                                 <td className="border border-gray-200 p-2 align-top text-center">
-                                    <ActionButton className={'bg-yellow-500'} iconBG="bg-yellow-600">
+                                    <SecondaryButton className={'bg-[#EF9E17]'} iconBG="bg-[#F6D719]">
                                         Admit
-                                    </ActionButton>
+                                    </SecondaryButton>
                                 </td>
                                 <td className="border border-gray-200 p-2 align-top text-center">
-                                    <ActionButton className={'bg-green-500'} iconBG="bg-green-600">
+                                    <SecondaryButton className={'bg-[#72C971]'} iconBG="bg-[#0A8D3F]">
                                         Send SMS
-                                    </ActionButton>
+                                    </SecondaryButton>
                                 </td>
                                 <td className="border border-gray-200 p-2 align-top text-center">
-                                    <ActionButton className={'bg-gray-500'} iconBG="bg-gray-600">
+                                    <SecondaryButton className={'bg-gray-500'} iconBG="bg-gray-600">
                                         Action
-                                    </ActionButton>
+                                    </SecondaryButton>
                                 </td>
                             </tr>
                             {/* if No records */}

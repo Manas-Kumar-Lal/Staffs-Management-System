@@ -14,7 +14,7 @@ export const adminSidebarJSON = [
             },
             {
                 name: "Admit Bulk Student",
-                route: "",
+                route: "admission-management/admit-bulk-students",
             },
             {
                 name: "Admission Requests",
@@ -30,13 +30,13 @@ export const adminSidebarJSON = [
                     },
                     {
                         name: "Send SMS To Inquiries",
-                        route: "",
+                        route: "admission-management/send-sms-to-inquiries",
                     },
                 ]
             },
             {
                 name: "Print Admission Forms",
-                route: "",
+                route: "admission-management/print-admission-forms",
             },
         ]
     },
@@ -46,7 +46,7 @@ export const adminSidebarJSON = [
         subLinks: [
             {
                 name: "Student Information",
-                route: "",
+                route: "student-management/student-information",
             },
             {
                 name: "Student Promotion",

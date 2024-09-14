@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import SearchByClass from './components/SearchByClass';
-import SearchByKeyword from './components/SearchByKeyword';
-import StudentDetails from './components/StudentDeails';
+import StudentDetails from './StudentDetails';
 import PrimaryButton from '../../../../components/utilities/buttons/primaryButton/PrimaryButton'
+import SearchByKeyword from '../../components/searchStudent/SearchByKeyword';
+import SearchByClass from '../../components/searchStudent/SearchByClass';
 
 const StudentList = () => {
   const [selectedOption, setSelectedOption] = useState('keyword');

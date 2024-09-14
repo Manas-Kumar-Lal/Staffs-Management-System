@@ -1,11 +1,11 @@
 import React from 'react'
-import AttendenceFields from '../components/attendenceFields/AttendenceFields'
+import AttendenceFields from '../attendenceFields/AttendenceFields'
 
 const ViewAttendence = () => {
     return (
         <div>
             <AttendenceFields
-            showPickerType={'monthYear'}
+                showPickerType={'monthYear'}
             />
 
             <div className="mt-8 flex justify-center">

@@ -16,7 +16,7 @@ export const TeacherSidebarJSON = [
     },
     {
         name: "Marks Entry",
-        route: "",
+        route: "/teacher/student-markentry",
         icons:''
     },
     {

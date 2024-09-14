@@ -1,5 +1,5 @@
 import React from 'react'
-import AttendenceFields from '../components/attendenceFields/AttendenceFields'
+import AttendenceFields from '../attendenceFields/AttendenceFields'
 
 const TakeAttendence = () => {
   return (

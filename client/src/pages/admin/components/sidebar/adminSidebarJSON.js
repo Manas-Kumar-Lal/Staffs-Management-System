@@ -50,15 +50,15 @@ export const adminSidebarJSON = [
             },
             {
                 name: "Student Promotion",
-                route: "",
+                route: "student-management/student-promotion",
             },
             {
                 name: "Student Birthdays",
-                route: "",
+                route: "student-management/students-birthday",
             },
             {
                 name: "Student Transfer",
-                route: "",
+                route: "student-management/student-transfer",
             },
         ]
     },

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import DropDownLevel2 from './DropDownLevel2';
 import { FaDotCircle } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
@@ -12,6 +12,16 @@ const DropDownLevel1 = ({ dropDownIndex, index, items }) => {
         if (dropDownLevel2 === index) setDropDownLevel2(null);
         else setDropDownLevel2(index);
     }
+
+    useEffect(() => {
+        if (dropDownLevel2) sessionStorage.setItem('dropDownLevel2', JSON.stringify(dropDownLevel2))
+    }, [dropDownLevel2])
+
+    useEffect(() => {
+        const sessionValue = JSON.parse(sessionStorage.getItem('dropDownLevel2'))
+        setDropDownLevel2(sessionValue)
+    }, [])
+
     return (
         <>
             <div className='overflow-y-hidden'>

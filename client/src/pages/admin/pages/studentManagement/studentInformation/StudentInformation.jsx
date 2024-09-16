@@ -70,7 +70,7 @@ const StudentInformation = () => {
             </div>
 
             <div className="mt-[1rem]">
-            <FilteredStudents />
+                <FilteredStudents />
             </div>
         </div>
     );

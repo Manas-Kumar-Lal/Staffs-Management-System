@@ -34,7 +34,7 @@ const AdmitStudent = () => {
                     />
                 </div>
                 <div className='w-full'>
-                    <PrimaryButton Icon={ImUserPlus} style={{ boxShadow: '0 0 10px rgba(0, 0, 0, .5)' }}>
+                    <PrimaryButton Icon={<ImUserPlus />} style={{ boxShadow: '0 0 10px rgba(0, 0, 0, .5)' }}>
                         Admit Student
                     </PrimaryButton>
                 </div>

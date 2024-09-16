@@ -1,5 +1,5 @@
 import './Sidebar.css'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import DropDownLevel1 from './DropDownLevel1';
 import { MdDashboard } from "react-icons/md";
@@ -14,6 +14,15 @@ const Sidebar = ({ sidebarJSON, Authority = "Admin", sideBarToggle, setSideBarTo
         if (dropDownLevel1 === index) setDropDownLevel1(null);
         else setDropDownLevel1(index);
     }
+
+    useEffect(() => {
+        if (dropDownLevel1) sessionStorage.setItem('dropDownLevel1', JSON.stringify(dropDownLevel1))
+    }, [dropDownLevel1])
+
+    useEffect(() => {
+        const sessionValue = JSON.parse(sessionStorage.getItem('dropDownLevel1'))
+        setDropDownLevel1(sessionValue)
+    }, [])
 
     return (
         <div className={`Sidebar overflow-y-auto bg-[#076a65] text-white w-[18rem] h-screen space-y-2 select-none py-3 z-[100] ${sideBarToggle ? 'max-[750px]:-translate-x-0' : 'max-[750px]:-translate-x-full'} max-[750px]:fixed top-0 left-0 transition-all duration-200`} >

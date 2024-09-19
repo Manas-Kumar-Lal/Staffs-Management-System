@@ -21,7 +21,7 @@ export const TeacherSidebarJSON = [
     },
     {
         name: "Study Materials - Lectures",
-        route: "",
+        route: "/teacher/student-study-material",
         icons:''
     },
     {
@@ -41,7 +41,7 @@ export const TeacherSidebarJSON = [
     },
     {
         name: "School Notification",
-        route: "",
+        route: "/teacher/notification",
         icons:''
     },
        

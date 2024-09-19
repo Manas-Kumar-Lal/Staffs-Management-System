@@ -8,6 +8,9 @@ import StudentList from './pages/studentList/StudentList';
 import ManageAttendance from './pages/manageAttendance/ManageAttendance';
 import MarksEntry from './pages/marksEntry/MarksEntry';
 import AddResult from './pages/marksEntry/addResult/AddResult';
+import StudentStudyMaterial from './pages/studentStudyMaterial/StudentStudyMaterial';
+import AddStudyMaterial from './pages/studentStudyMaterial/AddStudyMaterial/AddStudyMaterial';
+import Notification from './pages/notification/Notification';
 
 const Teacher = () => {
     const [sideBarToggle, setSideBarToggle] = useState(false);
@@ -34,6 +37,9 @@ const Teacher = () => {
                     <Route path="/student-attendence" element={<ManageAttendance />} />
                     <Route path='/student-markentry' element={<MarksEntry />} />
                     <Route path="/add-result" element={<AddResult />} />
+                    <Route path="/student-study-material" element={<StudentStudyMaterial />} />
+                    <Route path="/add-study-material" element={<AddStudyMaterial />} />
+                    <Route path="/notification" element={<Notification />} />
                 </Routes>
             </div>
         </div>

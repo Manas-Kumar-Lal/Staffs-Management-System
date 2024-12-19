@@ -12,7 +12,7 @@ const Hero = () => {
         <p className="text-lg text-gray-600 mb-8">Manage your school's activities seamlessly with our comprehensive system.</p>
         <div className='flex items-center justify-center gap-3'>
         <a className="bg-blue-600 text-white px-6 py-3 rounded cursor-pointer hover:bg-blue-700" onClick={() => navigate('/admin/dashboard')}>Admin Panel</a>
-        <a className="bg-blue-600 text-white px-6 py-3 rounded cursor-pointer hover:bg-blue-700" onClick={() => navigate('/teacher/dashboard')}>Teacher Panel</a>
+        <a className="bg-blue-600 text-white px-6 py-3 rounded cursor-pointer hover:bg-blue-700" onClick={() => navigate('executive/dashboard')}>Executive Panel</a>
       </div>
         </div>
     </section>

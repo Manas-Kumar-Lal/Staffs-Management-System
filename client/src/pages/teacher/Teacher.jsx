@@ -4,13 +4,14 @@ import { TeacherSidebarJSON } from './components/sidebar/TeacherSideBarJson';
 import { Route, Routes } from 'react-router-dom';
 import { RiMenu3Fill } from "react-icons/ri";
 import TeacherDashboard from './pages/teacherDashboard/TeacherDashboard';
-import StudentList from './pages/studentList/StudentList';
 import ManageAttendance from './pages/manageAttendance/ManageAttendance';
 import MarksEntry from './pages/marksEntry/MarksEntry';
 import AddResult from './pages/marksEntry/addResult/AddResult';
 import StudentStudyMaterial from './pages/studentStudyMaterial/StudentStudyMaterial';
 import AddStudyMaterial from './pages/studentStudyMaterial/AddStudyMaterial/AddStudyMaterial';
 import Notification from './pages/notification/Notification';
+import CallList from './pages/callList/CallList';
+import CallListDetails from './pages/callList/CallListDetails';
 
 const Teacher = () => {
     const [sideBarToggle, setSideBarToggle] = useState(false);
@@ -24,7 +25,7 @@ const Teacher = () => {
             <div className="h-full">
                 <Sidebar
                     sidebarJSON={TeacherSidebarJSON}
-                    Authority='Teacher'
+                    Authority='Executive'
                     sideBarToggle={sideBarToggle}
                     setSideBarToggle={setSideBarToggle}
                 />
@@ -33,7 +34,8 @@ const Teacher = () => {
             <div className="flex-1 overflow-y-auto p-4">
                 <Routes>
                     <Route path="/dashboard" element={<TeacherDashboard />} />
-                    <Route path="/student-list" element={<StudentList />} />
+                    <Route path="/call-list" element={<CallList />} />
+                    <Route path="/call-list-details/:id" element={<CallListDetails />} />
                     <Route path="/student-attendence" element={<ManageAttendance />} />
                     <Route path='/student-markentry' element={<MarksEntry />} />
                     <Route path="/add-result" element={<AddResult />} />

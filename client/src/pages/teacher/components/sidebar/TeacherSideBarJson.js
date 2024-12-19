@@ -1,27 +1,27 @@
 export const TeacherSidebarJSON = [
     {
         name: "Dashboard",
-        route: "/teacher/dashboard",
+        route: "/executive/dashboard",
         icons:''
     },
     {
-        name: "Student List",
-        route: "/teacher/student-list",
+        name: "Call List",
+        route: "/executive/call-list",
         icons:''
     },
     {
         name: "Manage Attendance",
-        route: "/teacher/student-attendence",
+        route: "/executive/student-attendence",
         icons:''
     },
     {
         name: "Marks Entry",
-        route: "/teacher/student-markentry",
+        route: "/executive/student-markentry",
         icons:''
     },
     {
         name: "Study Materials - Lectures",
-        route: "/teacher/student-study-material",
+        route: "/executive/student-study-material",
         icons:''
     },
     {
